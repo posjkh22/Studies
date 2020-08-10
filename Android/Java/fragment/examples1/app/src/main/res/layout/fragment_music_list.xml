@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Music List"/>
+
+        <ScrollView
+            android:id="@+id/sv_music"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+            <ListView
+                android:background="#FDD3DF"
+                android:id="@+id/lv_db_music"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
