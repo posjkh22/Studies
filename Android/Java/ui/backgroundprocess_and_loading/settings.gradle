@@ -1,0 +1,2 @@
+rootProject.name='backgroundprocess_and_loading'
+include ':app'
